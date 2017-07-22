@@ -1,0 +1,92 @@
+###### Bone ######
+item.sgs_metals.bone_boots.name=Bone Boots
+item.sgs_metals.bone_chestplate.name=Bone Chestplate
+item.sgs_metals.bone_helmet.name=Bone Helmet
+item.sgs_metals.bone_leggings.name=Bone Leggings
+item.sgs_metals.bone_sword.name=Bone Sword
+
+###### Steel ######
+# block names
+tile.steel_block.name=Steel Block
+
+# item names
+item.steel_ingot.name=Steel Ingot
+
+item.steel_axe.name=Steel Axe
+item.steel_hoe.name=Steel Hoe
+item.steel_pickaxe.name=Steel Pickaxe
+item.steel_spade.name=Steel Spade
+
+item.steel_boots.name=Steel Boots
+item.steel_chestplate.name=Steel Chestplate
+item.steel_helmet.name=Steel Helmet
+item.steel_leggings.name=Steel Leggings
+
+item.steel_sword.name=Steel Sword
+
+# item-block names
+
+#entity names
+
+###### Bone Steel ######
+tile.sgs_metals.bone_steel_block.name=Bone Steel Block
+
+item.sgs_metals.bone_steel_ingot.name=Bone Steel Ingot
+item.sgs_metals.bone_steel_boots.name=Bone Steel Boots
+item.sgs_metals.bone_steel_chestplate.name=Bone Steel Chestplate
+item.sgs_metals.bone_steel_helmet.name=Bone Steel Helmet
+item.sgs_metals.bone_steel_leggings.name=Bone Steel Leggings
+item.sgs_metals.bone_steel_sword.name=Bone Steel Sword
+
+###### Titanium ######
+# block names
+tile.my_ore.name=Titanium Ore
+tile.titanium_ore.name=Titanium Ore
+tile.titanium_block.name=Titanium Block
+
+# item names
+item.titanium_ingot.name=Titanium Ingot
+
+item.titanium_axe.name=Titanium Axe
+item.titanium_hoe.name=Titanium Hoe
+item.titanium_pickaxe.name=Titanium Pickaxe
+item.titanium_spade.name=Titanium Spade
+
+item.titanium_boots.name=Titanium Boots
+item.titanium_chestplate.name=Titanium Chestplate
+item.sgs_metals.titanium_chestplate.name=Titanium Chestplate
+item.titanium_helmet.name=Titanium Helmet
+item.titanium_leggings.name=Titanium Leggings
+
+item.titanium_sword.name=Titanium Sword
+
+# item-block names
+
+#entity names
+
+
+####### Autium #######
+
+# block names
+tile.autium_block.name=Autium Block
+
+# item names
+item.autium_ingot.name=Autium Ingot
+
+item.autium_axe.name=Autium Axe
+item.autium_hoe.name=Autium Hoe
+item.autium_pickaxe.name=Autium Pickaxe
+item.autium_spade.name=Autium Spade
+
+item.autium_boots.name=Autium Boots
+item.autium_chestplate.name=Autium Chestplate
+item.autium_helmet.name=Autium Helmet
+item.autium_leggings.name=Autium Leggings
+
+item.autium_sword.name=Autium Sword
+
+# potion effects
+bone.fireResistance=Bone Armor Fire Resistance
+
+#groups
+itemGroup.metals_tab=Metals

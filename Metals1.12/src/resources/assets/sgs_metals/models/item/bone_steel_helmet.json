@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "sgs_metals:items/bone_steel_helmet"
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"xxx",
+	"x x",
+	"x x"
+  ],
+  "key": {
+	"x": {
+		"item": "sgs_metals:autium_ingot"
+	}
+  },
+  "result": {
+    "item": "sgs_metals:autium_leggings",
+    "count": 1
+  }
+}

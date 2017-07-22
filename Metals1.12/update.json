@@ -1,0 +1,10 @@
+{
+    "homepage": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/2598878-fastladder",
+    "promos": {
+    "1.12-latest": "3.0.0",
+    "1.12-recommended": "3.0.0"
+  },
+    "1.12": {
+        "3.0.0": "-Updated to use the new GottschCore 1.1.0 instead of ModUtilsApi"
+    }
+}

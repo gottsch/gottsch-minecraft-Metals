@@ -1,0 +1,22 @@
+SGS Metals Changelog for MC1.11
+==============================
+
+Version 3.0
+-----------------------------
+-Added Bone Armor and Sword
+-Added Bone Steel Ingot, Block, Armor, and Sword.
+-New graphic for Titanium ore.
+-Fixed the transparency issues with Titanium ore. 
+-Removed resource packs from zip.
+
+Version 2.5
+----------------------------
+-Removed the need for TileEntities for rendering Titanium Ore.
+-Added Update Version checker based on ModUtilsLib 2.0
+
+Version 2.1
+----------------------------
+-Fixed "Caused by: java.lang.NoClassDefFoundError: net/minecraft/client/Minecraft" - server attempt to load client-side classes error.
+
+Version 2.0
+----------------------------

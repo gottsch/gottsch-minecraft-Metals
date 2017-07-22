@@ -1,0 +1,16 @@
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file 'C:\Users\mgottsch\git\gottsch-minecraft-Metals\Metals1.12\build.gradle' line: 21
+
+* What went wrong:
+A problem occurred evaluating root project 'Metals1.12'.
+> No commit found for revision string: HEAD
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 20.413 secs
