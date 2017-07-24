@@ -7,14 +7,14 @@
   ],
   "key": {
 	"x": {
-		"item": "sgs_metals:steel_ingot"
+		"item": "sgs_metals:titanium_ingot"
 	},
 	"s": {
 		"item": "minecraft:stick"
 	}
   },
   "result": {
-    "item": "sgs_metals:steel_sword",
+    "item": "sgs_metals:titanium_sword",
     "count": 1
   }
 }

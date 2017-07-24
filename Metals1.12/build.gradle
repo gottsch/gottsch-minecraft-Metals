@@ -74,11 +74,11 @@ processResources
     }
 }
 
-task packageJavadoc(type: Jar, dependsOn: 'javadoc') {
-    from javadoc.destinationDir
-    classifier = 'javadoc'
-}
+//task packageJavadoc(type: Jar, dependsOn: 'javadoc') {
+ //   from javadoc.destinationDir
+//    classifier = 'javadoc'
+//}
 
-artifacts {
-    archives packageJavadoc
-}
+//artifacts {
+//    archives packageJavadoc
+//}

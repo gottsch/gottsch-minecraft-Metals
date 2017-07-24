@@ -2,19 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
 	" x ",
-	" x ",
+	" s ",
 	" s "
   ],
   "key": {
 	"x": {
-		"item": "sgs_metals:steel_ingot"
+		"item": "sgs_metals:autium_ingot"
 	},
 	"s": {
 		"item": "minecraft:stick"
-	}
+	}	
   },
   "result": {
-    "item": "sgs_metals:steel_sword",
+    "item": "sgs_metals:autium_spade",
     "count": 1
   }
 }

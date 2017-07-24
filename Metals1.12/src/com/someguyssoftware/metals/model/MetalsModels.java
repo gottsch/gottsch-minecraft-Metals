@@ -2,8 +2,10 @@ package com.someguyssoftware.metals.model;
 
 import com.someguyssoftware.metals.Metals;
 import com.someguyssoftware.metals.block.MetalsBlocks;
+import com.someguyssoftware.metals.config.MetalsConfig;
 import com.someguyssoftware.metals.item.MetalsItems;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -12,9 +14,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 
-@Mod.EventBusSubscriber(Side.CLIENT)
-public class MetalsModels {
-	
+@Mod.EventBusSubscriber(modid = Metals.MODID, value =  Side.CLIENT)
+public class MetalsModels {	
 	
 	@SubscribeEvent
 	public static void registerModels(ModelRegistryEvent event) {

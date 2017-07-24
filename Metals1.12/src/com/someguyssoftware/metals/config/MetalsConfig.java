@@ -13,6 +13,9 @@ import net.minecraftforge.common.config.Configuration;
  *
  */
 public class MetalsConfig extends AbstractConfig {
+
+	public static final String METALS_TAB_ID = "metals_tab";
+	
 	/*
 	 *  NOTE should all these properties be static or not? what if the mod requires multiple configs
 	 *  for different situations? - Very rare and if so, then change to getter/setters according to need.
@@ -26,7 +29,6 @@ public class MetalsConfig extends AbstractConfig {
 	public static int titaniumOreMaxY;
 	
 	// ids
-	public static String metalsTabId;
 	public static String steelBlockId;
 	public static String steelIngotId;
 	public static String steelAxeId;
@@ -102,8 +104,6 @@ public class MetalsConfig extends AbstractConfig {
         titaniumOreMaxY = config.getInt("titaniumOreMaxY", "04-world-gen", 53, 1, 255, "The highest Y value where the ore can spawn.");
         
         // ids
-        metalsTabId = config.get("99-ids", "metalTabsId", "metals_tab").getString();
-        
         boneChestplateId = config.getString("boneChestplateId", "99-ids", "bone_chestplate", "");
         boneHelmetId = config.getString("boneHelmetId", "99-ids", "bone_helmet", "");
         boneLeggingsId = config.getString("boneLeggingsId", "99-ids", "bone_leggings", "");

@@ -15,9 +15,7 @@ import net.minecraft.item.ItemStack;
  *
  */
 public class SteelAxe extends MetalsAxe {
-	
-	public final static String NAME = "steel_axe";
-	
+
 	/**
 	 * 
 	 */
@@ -25,9 +23,8 @@ public class SteelAxe extends MetalsAxe {
 		super(material);
 		this.damageVsEntity = 8F;
 		this.attackSpeed = -3.1F;
-		this.setUnlocalizedName(NAME);
-		this.setCreativeTab(Metals.METALS_TAB);
-		setRegistryName(MetalsConfig.steelAxeId);
+		setCreativeTab(Metals.METALS_TAB);
+		setItemName(Metals.MODID, MetalsConfig.steelAxeId);
 	}
 
     /**

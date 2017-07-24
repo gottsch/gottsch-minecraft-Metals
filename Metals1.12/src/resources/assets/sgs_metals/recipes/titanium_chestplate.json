@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"x x",
+	"xxx",
+	"xxx"
+  ],
+  "key": {
+	"x": {
+		"item": "sgs_metals:titanium_ingot"
+	}
+  },
+  "result": {
+    "item": "sgs_metals:titanium_chestplate",
+    "count": 1
+  }
+}

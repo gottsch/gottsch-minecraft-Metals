@@ -54,30 +54,15 @@ public class TitaniumOre extends Block {
     
     @Override
     public boolean isNormalCube(IBlockState state, IBlockAccess world, BlockPos pos) {
-    	return true;
+    	return false;
     }
     
     /*
      * (non-Javadoc)
      * @see net.minecraft.block.Block#isFullCube(net.minecraft.block.state.IBlockState)
      */    
-    @Override
-    public boolean isFullCube(IBlockState state) {
-    	return true;
-    }
-    
 //    @Override
-//    public boolean isOpaqueCube(IBlockState state) {
-//        return false;
+//    public boolean isFullCube(IBlockState state) {
+//    	return false; // TODO was true
 //    }
-    
-//	@Override
-//	public int getRenderType() {
-//		return 3;
-//	}
-
-//	@Override
-//	public TileEntity createNewTileEntity(World worldIn, int meta) {
-//		return new TitaniumOreTileEntity();
-//	}
 }

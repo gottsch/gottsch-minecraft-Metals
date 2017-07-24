@@ -61,7 +61,7 @@ public class Metals extends AbstractMod {
 	private static final String VERSION_URL = "https://www.dropbox.com/s/at0n9db2a3sifl4/metals-versions.json?dl=1";
 	private static final BuildVersion MINECRAFT_VERSION = new BuildVersion(1, 12, 0);
 
-	private static final String METALS_CONFIG_DIR = "metals";
+	private static final String METALS_CONFIG_DIR = "sgs_metals";
 	public static MetalsConfig config;
 	
 	// latest version
@@ -79,9 +79,16 @@ public class Metals extends AbstractMod {
 	// potion/effects
 	public static Potion boneFireResistancePotion;
 	
-	// tab
-	
-	public static CreativeTabs METALS_TAB;
+	/*
+	 *  Metals Creative Tab
+	 *  Must be instantized <b>before</b> any registry events so that it is available to assign to blocks and items.
+	 */
+	public static CreativeTabs METALS_TAB = new CreativeTabs(CreativeTabs.getNextID(), Metals.MODID + ":" + MetalsConfig.METALS_TAB_ID) {
+		@SideOnly(Side.CLIENT)
+		public ItemStack getTabIconItem() {
+			return new ItemStack(MetalsItems.METALS_TAB, 1);
+		}
+	};
 
 	/**
 	 * 
@@ -104,12 +111,8 @@ public class Metals extends AbstractMod {
 
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
-
 		// register item renderers
 		// registerItemRenderers();
-
-		// register tile entities
-		registerTileEntities();
 
 		// register ores
 		OreDictionary.registerOre("bone", new ItemStack(Items.BONE));
@@ -120,21 +123,8 @@ public class Metals extends AbstractMod {
 		OreDictionary.registerOre("ingotTitanium", new ItemStack(MetalsItems.TITANIUM_INGOT));
 		OreDictionary.registerOre("ingotAutium", new ItemStack(MetalsItems.AUTIUM_INGOT));
 
-		// load recipes
-		MetalsCrafting.loadRecipes();
-
 		// world generators
 		GameRegistry.registerWorldGenerator(new MetalsWorldGenerator(), 50);
-
-		// register client renderers
-		proxy.registerRenderers(Metals.config);
-		
-		METALS_TAB = new CreativeTabs(CreativeTabs.getNextID(), MetalsConfig.metalsTabId) {
-			@SideOnly(Side.CLIENT)
-			public ItemStack getTabIconItem() {
-				return new ItemStack(MetalsItems.METALS_TAB, 1);
-			}
-		};
 		
 		// init potion effects
 		boneFireResistancePotion = new MetalsPotion(false, 14981695).setPotionName("bone.fireResistance").setIconIndex(7, 1).setBeneficial();
@@ -157,14 +147,6 @@ public class Metals extends AbstractMod {
 	public void postInit(FMLPostInitializationEvent event) {
 		if (!getConfig().isModEnabled()) return;	
 		super.postInit(event);		
-	}
-
-
-	/**
-	 * 
-	 */
-	private void registerTileEntities() {
-		//GameRegistry.registerTileEntity(TitaniumOreTileEntity.class, "titanium_ore_tile_entity");
 	}
 
 	@Override

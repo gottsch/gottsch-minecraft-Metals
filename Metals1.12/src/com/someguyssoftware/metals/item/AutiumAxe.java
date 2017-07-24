@@ -15,9 +15,7 @@ import net.minecraft.item.ItemStack;
  *
  */
 public class AutiumAxe extends MetalsAxe {
-	
-	public final static String NAME = "autium_axe";
-	
+
 	/**
 	 * 
 	 */
@@ -25,9 +23,8 @@ public class AutiumAxe extends MetalsAxe {
 		super(material);
 		this.damageVsEntity = 8F;
 		this.attackSpeed = -3F;
-		this.setUnlocalizedName(NAME);
-		this.setCreativeTab(Metals.METALS_TAB);
-		setRegistryName(MetalsConfig.autiumAxeId);
+		setCreativeTab(Metals.METALS_TAB);
+		setItemName(Metals.MODID, MetalsConfig.autiumAxeId);
 	}
 
     /**

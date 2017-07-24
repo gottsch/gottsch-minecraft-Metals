@@ -1,10 +1,10 @@
 [
 {
   "modid": "sgs_metals",
-  "name": "SGS Metals",
+  "name": "Metals!",
   "description": "This mod adds five new metals/materials and one ore to the game: bone, steel, bonesteel, titanium ore, titanium and autium. These were added to work with vanilla Minecraft mechanics, bridging the gap between iron and diamond.",
   "version": "3.0.0",
-  "mcversion": "1.11",
+  "mcversion": "1.12",
   "url": "",
   "updateUrl": "",
    "authorList":["gottsch", "mason"],
