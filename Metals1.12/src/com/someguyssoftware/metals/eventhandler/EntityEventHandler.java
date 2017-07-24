@@ -23,8 +23,7 @@ public class EntityEventHandler {
 
 	@SubscribeEvent
 	public static void onPlayerHurtEvent(LivingHurtEvent event) {
-		if (event.getEntityLiving().getEntityWorld().isRemote) {
-			
+		if (!event.getEntityLiving().getEntityWorld().isRemote) {
 			// if the player is being hurt
 			if (event.getEntityLiving() instanceof EntityPlayer) {
 				EntityPlayer player = (EntityPlayer) event.getEntityLiving();

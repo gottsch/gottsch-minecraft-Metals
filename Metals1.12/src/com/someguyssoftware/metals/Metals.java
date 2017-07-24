@@ -15,7 +15,6 @@ import com.someguyssoftware.gottschcore.proxy.IProxy;
 import com.someguyssoftware.gottschcore.version.BuildVersion;
 import com.someguyssoftware.metals.block.MetalsBlocks;
 import com.someguyssoftware.metals.config.MetalsConfig;
-import com.someguyssoftware.metals.eventhandler.EntityEventHandler;
 import com.someguyssoftware.metals.item.MetalsItems;
 import com.someguyssoftware.metals.potion.MetalsPotion;
 import com.someguyssoftware.metals.worldgen.MetalsWorldGenerator;
@@ -24,7 +23,6 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -99,14 +97,12 @@ public class Metals extends AbstractMod {
 	public void preInt(FMLPreInitializationEvent event) {
 		super.preInt(event);
 		// register additional events
-//		MinecraftForge.EVENT_BUS.register(new EntityEventHandler());
 
 		// create and load the config file		
 		config = new MetalsConfig(this, event.getModConfigurationDirectory(), METALS_CONFIG_DIR, "general.cfg");
 				
 		// configure logging
 		addRollingFileAppenderToLogger(Metals.NAME, Metals.NAME + "Appender", config);
-
 	}
 
 	@EventHandler

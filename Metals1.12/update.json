@@ -5,6 +5,6 @@
     "1.12-recommended": "3.0.0"
   },
     "1.12": {
-        "3.0.0": "-Updated to use the new GottschCore 1.1.0 instead of ModUtilsApi"
+        "3.0.0": "-Updated to use the new GottschCore 1.1.0 instead of ModUtilsApi\n-General re-code."
     }
 }
