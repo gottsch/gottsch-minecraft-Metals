@@ -22,7 +22,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class EntityEventHandler {
 
 	@SubscribeEvent
-	public void onPlayerHurtEvent(LivingHurtEvent event) {
+	public static void onPlayerHurtEvent(LivingHurtEvent event) {
 		if (event.getEntityLiving().getEntityWorld().isRemote) {
 			
 			// if the player is being hurt

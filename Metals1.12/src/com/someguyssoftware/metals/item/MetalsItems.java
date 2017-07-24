@@ -22,6 +22,8 @@ import com.someguyssoftware.gottschcore.item.ModSpadeBuilder;
 import com.someguyssoftware.gottschcore.item.ModSword;
 import com.someguyssoftware.gottschcore.item.ModSwordBuilder;
 import com.someguyssoftware.metals.Metals;
+import com.someguyssoftware.metals.armor.BoneArmor;
+import com.someguyssoftware.metals.armor.BoneSteelArmor;
 import com.someguyssoftware.metals.config.MetalsConfig;
 
 import net.minecraft.init.Items;
@@ -229,6 +231,7 @@ public class MetalsItems {
 		initSwords();
 		initTools();
 		initArmor();
+		initSpecialArmor();
 	}
 	
 	/**
@@ -441,6 +444,67 @@ public class MetalsItems {
 		
 		// clear the props lsit
 		props.clear();
+	}
+	
+	/**
+	 * 
+	 */
+	public static void initSpecialArmor() {
+		final List<Pair<String, Object[]>> props = new ArrayList<>();
+
+		/*
+		 *  build armor item list with properties
+		 */
+		// BONE
+		props.add(Pair.of("BONE_CHESTPLATE", new Object[] {MetalsConfig.boneChestplateId, BONE_ARMOR_MATERIAL, 2, EntityEquipmentSlot.CHEST, BONE_ARMOR_TEXTURE_LAYER1, Items.BONE}));
+		props.add(Pair.of("BONE_BOOTS", new Object[] {MetalsConfig.boneBootsId, BONE_ARMOR_MATERIAL, 2, EntityEquipmentSlot.FEET, BONE_ARMOR_TEXTURE_LAYER1, Items.BONE}));
+		props.add(Pair.of("BONE_HELMET", new Object[] {MetalsConfig.boneHelmetId, BONE_ARMOR_MATERIAL, 2, EntityEquipmentSlot.HEAD, BONE_ARMOR_TEXTURE_LAYER1, Items.BONE}));
+		props.add(Pair.of("BONE_LEGGINGS", new Object[] {MetalsConfig.boneLeggingsId, BONE_ARMOR_MATERIAL, 2, EntityEquipmentSlot.LEGS, BONE_ARMOR_TEXTURE_LAYER2, Items.BONE}));
+		
+		// initialize all the items
+		for (Pair<String, Object[]> pair : props) {	
+			Object[] values = pair.getRight();
+			
+			// build the armor
+			Item armor = 
+					new BoneArmor(Metals.MODID,
+							(String)values[0],
+							(ArmorMaterial)values[1],
+							(int)values[2],
+							(EntityEquipmentSlot)values[3],
+							(String)values[4],
+							(Item)values[5])
+					.setCreativeTab(Metals.METALS_TAB);
+			
+			setPropertyWithReflection(pair.getLeft(), armor);
+		}
+		
+		// clear the props lsit
+		props.clear();
+		
+		// BONESTEEL
+		props.add(Pair.of("BONESTEEL_CHESTPLATE", new Object[] {MetalsConfig.boneSteelChestplateId, BONESTEEL_ARMOR_MATERIAL, 2, EntityEquipmentSlot.CHEST, BONESTEEL_ARMOR_TEXTURE_LAYER1, BONESTEEL_INGOT}));
+		props.add(Pair.of("BONESTEEL_BOOTS", new Object[] {MetalsConfig.boneSteelBootsId, BONESTEEL_ARMOR_MATERIAL, 2, EntityEquipmentSlot.FEET, BONESTEEL_ARMOR_TEXTURE_LAYER1, BONESTEEL_INGOT}));
+		props.add(Pair.of("BONESTEEL_HELMET", new Object[] {MetalsConfig.boneSteelHelmetId, BONESTEEL_ARMOR_MATERIAL, 2, EntityEquipmentSlot.HEAD, BONESTEEL_ARMOR_TEXTURE_LAYER1, BONESTEEL_INGOT}));
+		props.add(Pair.of("BONESTEEL_LEGGINGS", new Object[] {MetalsConfig.boneSteelLeggingsId, BONESTEEL_ARMOR_MATERIAL, 2, EntityEquipmentSlot.LEGS, BONESTEEL_ARMOR_TEXTURE_LAYER2, BONESTEEL_INGOT}));
+		
+		// initialize all the items
+		for (Pair<String, Object[]> pair : props) {	
+			Object[] values = pair.getRight();
+			
+			// build the armor
+			Item armor = 
+					new BoneSteelArmor(Metals.MODID,
+							(String)values[0],
+							(ArmorMaterial)values[1],
+							(int)values[2],
+							(EntityEquipmentSlot)values[3],
+							(String)values[4],
+							(Item)values[5])
+					.setCreativeTab(Metals.METALS_TAB);
+			
+			setPropertyWithReflection(pair.getLeft(), armor);
+		}
 	}
 	
 	/**

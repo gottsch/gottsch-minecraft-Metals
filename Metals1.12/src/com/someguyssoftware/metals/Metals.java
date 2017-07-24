@@ -99,7 +99,7 @@ public class Metals extends AbstractMod {
 	public void preInt(FMLPreInitializationEvent event) {
 		super.preInt(event);
 		// register additional events
-		MinecraftForge.EVENT_BUS.register(new EntityEventHandler());
+//		MinecraftForge.EVENT_BUS.register(new EntityEventHandler());
 
 		// create and load the config file		
 		config = new MetalsConfig(this, event.getModConfigurationDirectory(), METALS_CONFIG_DIR, "general.cfg");
@@ -111,9 +111,6 @@ public class Metals extends AbstractMod {
 
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
-		// register item renderers
-		// registerItemRenderers();
-
 		// register ores
 		OreDictionary.registerOre("bone", new ItemStack(Items.BONE));
 		OreDictionary.registerOre("ingotSteel", new ItemStack(MetalsItems.STEEL_INGOT));

@@ -1,11 +1,10 @@
 package com.someguyssoftware.metals.model;
 
+
 import com.someguyssoftware.metals.Metals;
 import com.someguyssoftware.metals.block.MetalsBlocks;
-import com.someguyssoftware.metals.config.MetalsConfig;
 import com.someguyssoftware.metals.item.MetalsItems;
 
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
