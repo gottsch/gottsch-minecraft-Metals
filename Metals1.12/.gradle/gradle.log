@@ -7,7 +7,7 @@
          by: Searge, ProfMobius, Fesh0r,         
          R4wk, ZeuX, IngisKahn, bspkrs           
 #################################################
-Version string 'mc1.12-v3.0.0-197e7b4' does not match SemVer specification 
+Version string 'mc1.12-v3.0.1-bab72a5' does not match SemVer specification 
 You should try SemVer : http://semver.org/
 :deobfCompileDummyTask
 :deobfProvidedDummyTask
@@ -15,9 +15,9 @@ You should try SemVer : http://semver.org/
 :compileApiJava UP-TO-DATE
 :processApiResources UP-TO-DATE
 :apiClasses UP-TO-DATE
-:sourceMainJava
+:sourceMainJava UP-TO-DATE
 :compileJava
-:processResources UP-TO-DATE
+:processResources
 :classes
 :jar
 :sourceTestJava UP-TO-DATE
@@ -33,8 +33,7 @@ You should try SemVer : http://semver.org/
 :reobfJar
 :extractRangemapReplacedMain
 C:\Users\mgottsch\git\gottsch-minecraft-Metals\Metals1.12\build\sources\main\java
-:retromapReplacedMain
-remapping source...
+:retromapReplacedMain UP-TO-DATE
 :sourceJar
 :assemble
 :check UP-TO-DATE
@@ -42,4 +41,4 @@ remapping source...
 
 BUILD SUCCESSFUL
 
-Total time: 1 mins 17.484 secs
+Total time: 20.976 secs
