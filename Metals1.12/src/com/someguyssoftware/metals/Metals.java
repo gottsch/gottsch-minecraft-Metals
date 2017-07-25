@@ -53,7 +53,7 @@ public class Metals extends AbstractMod {
 	// constants
 	public static final String MODID = "sgs_metals";
 	protected static final String NAME = "Metals";
-	protected static final String VERSION = "3.0.0";
+	protected static final String VERSION = "3.0.1";
 	protected static final String UPDATE_JSON_URL = "https://raw.githubusercontent.com/gottsch/gottsch-minecraft-Metals/master/Metals1.12/update.json";
 
 	private static final String VERSION_URL = "https://www.dropbox.com/s/at0n9db2a3sifl4/metals-versions.json?dl=1";

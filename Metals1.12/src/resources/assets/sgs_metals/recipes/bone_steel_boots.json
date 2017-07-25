@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"   ",
+	"x x",
+	"x x"
+  ],
+  "key": {
+	"x": {
+		"item": "sgs_metals:bone_steel_ingot"
+	}
+  },
+  "result": {
+    "item": "sgs_metals:bone_steel_boots",
+    "count": 1
+  }
+}

@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:bone"
+		},
+		{
+			"item": "sgs_metals:steel_ingot"
+		}
+	],
+	"result": {
+		"item": "sgs_metals:bone_steel_ingot",
+		"count": 1
+	}
+}
