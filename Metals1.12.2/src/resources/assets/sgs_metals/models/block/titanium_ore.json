@@ -1,0 +1,7 @@
+{
+    "parent": "sgs_metals:block/ore_parent2",
+    "textures": {
+        "all": "blocks/stone",
+        "0": "sgs_metals:blocks/titanium_ore_nugget1"
+    }
+}

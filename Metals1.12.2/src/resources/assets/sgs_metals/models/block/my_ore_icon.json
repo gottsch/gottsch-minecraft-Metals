@@ -1,0 +1,10 @@
+{
+    "parent": "sgs_metals:block/my_ore_parent",
+    "textures": {
+        "particle": "blocks/stone",
+        "bottom": "blocks/stone",
+        "top": "blocks/stone",
+        "side": "blocks/stone",
+        "overlay": "sgs_metals:blocks/titanium_ore_overlay"
+    }
+}

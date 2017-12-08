@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:coal",
+			"data": 0
+		},
+		{
+			"item": "minecraft:iron_ingot"
+		},
+		{
+			"item": "minecraft:coal",
+			"data": 0
+		},
+		{
+			"item": "minecraft:iron_ingot"
+		}
+	],
+	"result": {
+		"item": "sgs_metals:steel_ingot",
+		"count": 1
+	}
+}

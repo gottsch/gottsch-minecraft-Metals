@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	" xx",
+	" sx",
+	" s "
+  ],
+  "key": {
+	"x": {
+		"item": "sgs_metals:autium_ingot"
+	},
+	"s": {
+		"item": "minecraft:stick"
+	}	
+  },
+  "result": {
+    "item": "sgs_metals:autium_axe",
+    "count": 1
+  }
+}
