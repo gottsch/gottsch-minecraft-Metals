@@ -217,6 +217,9 @@ public class MetalsItems {
 			new int[] { 2, 5, 8, 2 }, 20, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 2.0F);
 		
 	static {		
+		// must initialize the items first as other more specific items depend on them (ie, tools, swords, armor, etc)
+		initItems();
+		
 		/*
 		 * Axes have special properties that require their own concrete classes
 		 */
@@ -227,7 +230,7 @@ public class MetalsItems {
 		// TAB
 		METALS_TAB = new ModItem().setItemName(Metals.MODID, MetalsConfig.METALS_TAB_ID);
 		
-		initItems();
+
 		initSwords();
 		initTools();
 		initArmor();
