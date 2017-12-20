@@ -3,6 +3,9 @@
  */
 package com.someguyssoftware.metals;
 
+import com.someguyssoftware.metals.block.MetalsBlocks;
+import com.someguyssoftware.metals.item.MetalsItems;
+
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -180,9 +183,8 @@ public class MetalsCrafting {
 ////		ItemStack titaniumIngotStack = new ItemStack(ModItems.TITANIUM_INGOT);	
 //		ItemStack autiumIngotStack = new ItemStack(MetalsItems.AUTIUM_INGOT);
 //		
-//		// TODO
-//		// smelting recipe
-//		GameRegistry.addSmelting(Metals.titaniumOre, new ItemStack(MetalsItems.TITANIUM_INGOT), 5);
+		// smelting recipe
+		GameRegistry.addSmelting(MetalsBlocks.TITANIUM_ORE, new ItemStack(MetalsItems.TITANIUM_INGOT), 5);
 //		
 //		// block recipes
 //		GameRegistry.addRecipe(new ShapelessOreRecipe(Metals.titaniumBlock, 
