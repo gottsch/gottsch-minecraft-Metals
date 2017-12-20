@@ -53,7 +53,7 @@ public class Metals extends AbstractMod {
 	// constants
 	public static final String MODID = "sgs_metals";
 	protected static final String NAME = "Metals";
-	protected static final String VERSION = "3.0.1";
+	protected static final String VERSION = "3.0.2";
 	protected static final String UPDATE_JSON_URL = "https://raw.githubusercontent.com/gottsch/gottsch-minecraft-Metals/master/Metals1.12/update.json";
 
 	private static final String VERSION_URL = "https://www.dropbox.com/s/at0n9db2a3sifl4/metals-versions.json?dl=1";
@@ -107,6 +107,7 @@ public class Metals extends AbstractMod {
 
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
+		// TODO move this from init() to item event registry
 		// register ores
 		OreDictionary.registerOre("bone", new ItemStack(Items.BONE));
 		OreDictionary.registerOre("ingotSteel", new ItemStack(MetalsItems.STEEL_INGOT));
@@ -116,6 +117,9 @@ public class Metals extends AbstractMod {
 		OreDictionary.registerOre("ingotTitanium", new ItemStack(MetalsItems.TITANIUM_INGOT));
 		OreDictionary.registerOre("ingotAutium", new ItemStack(MetalsItems.AUTIUM_INGOT));
 
+		// register non-json recipes (ie smelting)
+		MetalsCrafting.loadRecipes();
+		
 		// world generators
 		GameRegistry.registerWorldGenerator(new MetalsWorldGenerator(), 50);
 		

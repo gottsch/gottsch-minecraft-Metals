@@ -1,11 +1,12 @@
 {
     "homepage": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/2329388-sgs-metals",
     "promos": {
-    "1.12.2-latest": "3.0.1",
-    "1.12.2-recommended": "3.0.1"
+    "1.12.2-latest": "3.0.2",
+    "1.12.2-recommended": "3.0.2"
   },
     "1.12.2": {
         "3.0.0": "-Updated to use the new GottschCore 1.1.0 instead of ModUtilsApi\n-General re-code.",
-        "3.0.1": "-Added the missing recipes."
+        "3.0.1": "-Added the missing recipes.",
+        "3.0.2": "-Added the titanium ore smelting recipe back."
     }
 }

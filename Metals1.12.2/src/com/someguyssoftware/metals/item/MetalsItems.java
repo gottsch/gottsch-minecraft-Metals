@@ -235,6 +235,8 @@ public class MetalsItems {
 		initTools();
 		initArmor();
 		initSpecialArmor();
+		
+		// TODO register ores in ore dictionary
 	}
 	
 	/**
