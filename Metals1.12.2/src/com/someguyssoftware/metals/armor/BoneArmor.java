@@ -46,10 +46,10 @@ public class BoneArmor extends ModArmor {
 	@Override
 	public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) {
 		// if wearing a full set of bone armor
-		if (player.inventory.armorItemInSlot(3) != null && player.inventory.armorItemInSlot(3).getItem() == MetalsItems.BONE_HELMET
-		        && player.inventory.armorItemInSlot(2) != null && player.inventory.armorItemInSlot(2).getItem() == MetalsItems.BONE_CHESTPLATE
-		        && player.inventory.armorItemInSlot(1) != null && player.inventory.armorItemInSlot(1).getItem() == MetalsItems.BONE_LEGGINGS
-		        && player.inventory.armorItemInSlot(0) != null && player.inventory.armorItemInSlot(0).getItem() == MetalsItems.BONE_BOOTS) {
+		if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD) != null && player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == MetalsItems.BONE_HELMET
+		        && player.getItemStackFromSlot(EntityEquipmentSlot.CHEST) != null && player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == MetalsItems.BONE_CHESTPLATE
+		        && player.getItemStackFromSlot(EntityEquipmentSlot.LEGS) != null && player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == MetalsItems.BONE_LEGGINGS
+		        && player.getItemStackFromSlot(EntityEquipmentSlot.FEET) != null && player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == MetalsItems.BONE_BOOTS) {
 			// add fire resistance
 			if ((player.getActivePotionEffect(Metals.boneFireResistancePotion) == null ||
 					player.getActivePotionEffect(Metals.boneFireResistancePotion).getDuration() <= 1)) {
