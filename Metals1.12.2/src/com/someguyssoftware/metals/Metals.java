@@ -45,7 +45,7 @@ import net.minecraftforge.oredict.OreDictionary;
 		modid = Metals.MODID,
 		name = Metals.NAME,
 		version = Metals.VERSION,
-		dependencies = "required-after:gottschcore@[1.1.2,)",
+		dependencies = "required-after:forge@[14.23.5.2768,);required-after:gottschcore@[1.7.0,)",
 		acceptedMinecraftVersions = "[1.12.2]",
 		updateJSON = Metals.UPDATE_JSON_URL)
 @Credits(values={"SGS Metals was first developed by Mark Gottschling on Aug 27, 2014. Credits to Mason for ideas and debugging."})

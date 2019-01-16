@@ -23,7 +23,8 @@ ext {
     // revision = git.head().abbreviatedId
 }
 
-version = "mc${mc_version}-v${mod_version}-${git.head().abbreviatedId}"
+//version = "mc${mc_version}-v${mod_version}-${git.head().abbreviatedId}"
+version = "mc${mc_version}-f${forge_version}-${mod_version_type}${mod_version}"
 group = "${package_group}" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "${mod_name}"
 
@@ -50,8 +51,13 @@ sourceSets.main{
 	}
 }
 
+//dependencies {
+//	compile files('../../gottsch-minecraft-GottschCore/GottschCore1.12.2/build/libs/GottschCore-mc1.12.2-f14.23.5.2768-v1.5.1.jar')
+//}
+
+def gottschcore_path="../../gottsch-minecraft-GottschCore/GottschCore${mc_version}/build/libs/GottschCore-mc${mc_version}-f${forge_version}-v${gottschcore_version}.jar"
 dependencies {
-	compile files('../../gottsch-minecraft-GottschCore/GottschCore1.12.2/build/libs/GottschCore-mc1.12.2-f14.23.5.2768-v1.5.1.jar')
+	compile files(gottschcore_path)	
 }
 
 processResources
