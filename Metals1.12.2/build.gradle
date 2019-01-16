@@ -51,7 +51,7 @@ sourceSets.main{
 }
 
 dependencies {
-	compile files('../../gottsch-minecraft-GottschCore/GottschCore1.12.2/build/libs/GottschCore-mc1.12.2-v1.1.2.jar')
+	compile files('../../gottsch-minecraft-GottschCore/GottschCore1.12.2/build/libs/GottschCore-mc1.12.2-f14.23.5.2768-v1.5.1.jar')
 }
 
 processResources

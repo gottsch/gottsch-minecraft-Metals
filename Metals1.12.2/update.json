@@ -1,12 +1,13 @@
 {
     "homepage": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/2329388-sgs-metals",
     "promos": {
-    "1.12.2-latest": "3.0.2",
-    "1.12.2-recommended": "3.0.2"
+    "1.12.2-latest": "3.0.3",
+    "1.12.2-recommended": "3.0.3"
   },
     "1.12.2": {
         "3.0.0": "-Updated to use the new GottschCore 1.1.0 instead of ModUtilsApi\n-General re-code.",
         "3.0.1": "-Added the missing recipes.",
-        "3.0.2": "-Added the titanium ore smelting recipe back."
+        "3.0.2": "-Added the titanium ore smelting recipe back.",
+        "3.0.3": "Update to use GottschCore 1.2.0 as minimum.\nChanged EntityEventHandler to use player.getItemStackFromSlot() instead of  player.inventory.armorItemInSlot() which is sided and causes crashes on a server.\nRemoved legacy update file from dropbox."
     }
 }

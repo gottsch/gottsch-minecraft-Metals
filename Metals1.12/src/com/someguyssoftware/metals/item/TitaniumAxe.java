@@ -22,7 +22,7 @@ public class TitaniumAxe extends MetalsAxe {
 	 */
 	public TitaniumAxe(Item.ToolMaterial material)  {
 		super(material);
-		this.damageVsEntity = 8F;
+		this.attackDamage = 8F;
 		this.attackSpeed = -3.1F;
 		setCreativeTab(Metals.METALS_TAB);
 		setItemName(Metals.MODID, MetalsConfig.titaniumAxeId);

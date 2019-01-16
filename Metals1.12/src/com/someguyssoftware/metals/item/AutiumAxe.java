@@ -21,7 +21,8 @@ public class AutiumAxe extends MetalsAxe {
 	 */
 	public AutiumAxe(Item.ToolMaterial material)  {
 		super(material);
-		this.damageVsEntity = 8F;
+		this.attackDamage = 8F;
+
 		this.attackSpeed = -3F;
 		setCreativeTab(Metals.METALS_TAB);
 		setItemName(Metals.MODID, MetalsConfig.autiumAxeId);

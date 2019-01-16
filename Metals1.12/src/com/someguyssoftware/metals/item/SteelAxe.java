@@ -21,7 +21,7 @@ public class SteelAxe extends MetalsAxe {
 	 */
 	public SteelAxe(Item.ToolMaterial material)  {
 		super(material);
-		this.damageVsEntity = 8F;
+		this.attackDamage = 8F;
 		this.attackSpeed = -3.1F;
 		setCreativeTab(Metals.METALS_TAB);
 		setItemName(Metals.MODID, MetalsConfig.steelAxeId);
